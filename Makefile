@@ -13,8 +13,5 @@ install:
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
 	install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version
 	ln -s ${DESTDIR}/usr/lib/deepin/desktop-version ${DESTDIR}/etc/deepin-version
-	echo "version,codename,series,created,release,eol" > ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.2,Unstable,unstable,2016-06-01" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.3,Unstable,unstable,2016-09-12" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
