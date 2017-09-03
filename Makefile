@@ -1,5 +1,5 @@
-VERSION := 17.0.2
-RELEASE := 
+VERSION := 17.0
+RELEASE := 3-rc
 
 all: build
 
